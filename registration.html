@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Registration</title>
+		<script>
+			function formInvoke()
+			{
+				document.getElementById('in').innerHTML = 'You have been successfully registered for SAT exam. Please note your id - SAT001.';
+			}
+			function displayPhoto()
+			{
+				var name = document.getElementById('photo').value;
+				console.log(name.substr(12));
+				document.getElementById('img').innerHTML = "<img src = '"+name.substr(12)+"' height = '100' width = '100'></img>";
+			}
+		</script>
+		<link rel="stylesheet" type="text/css" href="normalize.css">
+		<link rel="stylesheet" type="text/css" href="skeleton.css">
+	</head>
+	<body style="background-image: url('sat.png');background-size:1366px 680px;">
+		<script src="jquery.min.js"></script>
+		<script src="bootstrap.min.js"></script>
+		<h1><center>Registrations for SAT</center></h1>
+		<center><form>
+			<label> Name : <br><input type = 'text' class="form-control" placeholder="Enter Name"></label><br><br>
+			<label> Date of Birth : <br><input type = 'date' class="form-control"></label><br><br>
+			<label> Gender : <br><label class="radio-inline"></label>
+      			<input type="radio" name="optradio">Male
+    		</label>
+    		&nbsp;&nbsp;&nbsp;
+    		<label class="radio-inline">
+      			<input type="radio" name="optradio">Female
+    		</label><br><br>
+			<label> Photo : <br><input type="file" name="Select Photo" id="photo" onchange = 'displayPhoto()'></label><br><br>
+			<div id = 'img'></div>
+			<button class="btn btn-primary" type="button" onclick='formInvoke()'>Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;<button type="reset" class="btn btn-primary">Reset</button><br><br>
+		</form></center>
+		<div id = 'in'>
+		</div>
+		<center><button onclick="location.href='index.html'" type="button">Click Here to go to the home page.</button></center>
+	</body>
+</html>

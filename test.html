@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SAT Test</title>
+		<script>
+			m = 10;
+			s = 0;
+			function onTimer()
+			{
+  				document.getElementById('mcount').innerHTML = m;
+  				document.getElementById('scount').innerHTML = s;
+  				if(m==0 && s==0)
+  				{
+  					window.location.href = "test_after.html";
+  				}
+  				else if(s==0)
+  				{
+  					m--;
+  					s = 59;
+  					setTimeout(onTimer, 1000);
+  				}
+  				else
+  				{
+  					s--;
+    				setTimeout(onTimer, 1000);
+  				}
+  			}
+			function goto()
+			{
+				window.location.href = "test_after.html";
+			}
+		</script>
+		<link rel="stylesheet" type="text/css" href="normalize.css">
+		<link rel="stylesheet" type="text/css" href="skeleton.css">
+	</head>
+	<body onload = 'onTimer()'>
+		<script src="jquery.min.js"></script>
+		<script src="bootstrap.min.js"></script>
+		<div class = 'container'><div class = 'jubotron' style = "background-color:blue">
+		<h1><center><font color='white'>SAT Online Exam</font></center></h1></div>
+		<h3>Time Remaining : </h3><span id = 'mcount'></span> : <span id = 'scount'></span>
+		<h3>Question : </h3>
+		<div id = 'question'></div><br><br>
+		<button class="btn btn-primary" type="button" onclick='goto()'>End Test</button>
+	</body>
+</html>

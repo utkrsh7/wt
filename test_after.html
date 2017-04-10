@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SAT Test</title>
+		<script>
+			function rateOverall(ele)
+			{
+				var id = 'o'
+				for(var i=1; i<ele; ++i)
+				{
+					document.getElementById(id+""+i+"").checked = true;
+				}
+				for(var i=ele+1; i<=5; ++i)
+				{
+					document.getElementById(id+""+i+"").checked = false;
+				}
+			}
+			function rateQuality(ele)
+			{
+				var id = 'q'
+				for(var i=1; i<ele; ++i)
+				{
+					document.getElementById(id+""+i+"").checked = true;
+				}
+				for(var i=ele+1; i<=5; ++i)
+				{
+					document.getElementById(id+""+i+"").checked = false;
+				}
+			}
+			function rateDifficulty(ele)
+			{
+				var id = 'd'
+				for(var i=1; i<ele; ++i)
+				{
+					document.getElementById(id+""+i+"").checked = true;
+				}
+				for(var i=ele+1; i<=5; ++i)
+				{
+					document.getElementById(id+""+i+"").checked = false;
+				}
+			}
+			function sendFeedback()
+			{
+
+			}
+		</script>
+		<link rel="stylesheet" type="text/css" href="normalize.css">
+		<link rel="stylesheet" type="text/css" href="skeleton.css">
+	</head>
+	<body style="background-image: url('sat.png');background-size:1366px 680px;">
+		<script src="jquery.min.js"></script>
+		<script src="bootstrap.min.js"></script>
+		<div class = 'container'><div class = 'jubotron' style = "background-color:blue">
+		<h1><center><font color='white'>SAT Online Exam</font></center></h1></div>
+		<h2>Thanks for attending the exam! Please rate your feedback below</font></h2>
+		<form onsubmit='sendFeedback()'>
+		<br><br><label class='radio-inline'>Overall Experience : <input type = 'radio' id = 'o1' onclick = 'rateOverall(1)'>&nbsp;&nbsp;&nbsp;<input type = 'radio' id = 'o2' onclick = 'rateOverall(2)'>&nbsp;&nbsp;&nbsp;<input type = 'radio' id = 'o3' onclick = 'rateOverall(3)'>&nbsp;&nbsp;&nbsp;<input type = 'radio' id = 'o4' onclick = 'rateOverall(4)'>&nbsp;&nbsp;&nbsp;<input type = 'radio' id = 'o5' onclick = 'rateOverall(5)'></label>
+		<br><br><label class='radio-inline'>Quality of Questions : <input type = 'radio' id = 'q1' onclick = 'rateQuality(1)'>&nbsp;&nbsp;&nbsp;<input type = 'radio' id = 'q2' onclick = 'rateQuality(2)'>&nbsp;&nbsp;&nbsp;<input type = 'radio' id = 'q3' onclick = 'rateQuality(3)'>&nbsp;&nbsp;&nbsp;<input type = 'radio' id = 'q4' onclick = 'rateQuality(4)'>&nbsp;&nbsp;&nbsp;<input type = 'radio' id = 'q5' onclick = 'rateQuality(5)'></label>
+		<br><br><label class='radio-inline'>Diffculty of Exam : <input type = 'radio' id = 'd1' onclick = 'rateDifficulty(1)'>&nbsp;&nbsp;&nbsp;<input type = 'radio' id = 'd2' onclick = 'rateDifficulty(2)'>&nbsp;&nbsp;&nbsp;<input type = 'radio' id = 'd3' onclick = 'rateDifficulty(3)'>&nbsp;&nbsp;&nbsp;<input type = 'radio' id = 'd4' onclick = 'rateDifficulty(4)'>&nbsp;&nbsp;&nbsp;<input type = 'radio' id = 'd5' onclick = 'rateDifficulty(5)'></label>
+		<br><br><button class="btn btn-primary" type="button">Submit</button></form>
+		<br>
+		<center><button onclick="location.href='index.html'" type="button">Click Here to go to the home page.</button></center>
+	</div></body>
+</html>

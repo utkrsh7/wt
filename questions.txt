@@ -1,0 +1,59 @@
+1. All of the following are examples of real security and privacy risks EXCEPT:
+A. hackers.
+B. spam.
+C. viruses.
+D. identity theft.
+
+2. Which of the following is NOT one of the four major data processing functions of a computer?
+A. gathering data
+B. processing data into information
+C. analyzing the data or information
+D. storing the data or information
+
+3. ____________ is data that has been organized or presented in a meaningful fashion.
+A. A process
+B. Software
+C. Storage
+D. Information
+
+4. Computers process data into information by working exclusively with:
+A. multimedia.
+B. words.
+C. characters.
+D. numbers.
+
+5. ____________ is any part of the computer that you can physically touch.
+A. Hardware
+B. A device
+C. A peripheral
+D. An application
+
+6. The ____________, also called the "brains" of the computer, is responsible for processing data.
+A. motherboard
+B. memory
+C. RAM
+D. central processing unit (CPU)
+
+7. Apple Macintoshes (Macs) and PCs use different ____________ to process data and different operating systems.
+A. languages
+B. methods
+C. CPUs
+D. storage devices
+
+8. The difference between people with access to computers and the Internet and those without this access is known as the:
+A. digital divide.
+B. Internet divide.
+C. Web divide.
+D. broadband divide.
+
+9. ____________ controls the way in which the computer system functions and provides a means by which users can interact with the computer.
+A. The platform
+B. The operating system
+C. Application software
+D. The motherboard
+
+10. The metal or plastic case that holds all the physical parts of the computer is the:
+A. system unit.
+B. CPU.
+C. mainframe.
+D. platform.

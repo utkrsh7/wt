@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SAT Test</title>
+		<script>
+		i = 60;
+		function fillInfo()
+		{
+			document.getElementById('info').innerHTML = '<label><b>Name : </b>Harshith</label><img src="IMG_0396.jpg" align="right" height = "100" width = "100"></img>'
+			onTimer();
+		}
+		function onTimer()
+		{
+  			document.getElementById('count').innerHTML = i;
+  			i--;
+  			if (i < 0)
+  			{
+    			window.location.href = "test.html";
+  			}
+  			else
+  			{
+    			setTimeout(onTimer, 1000);
+  			}
+  		}
+		</script>
+		<link rel="stylesheet" type="text/css" href="normalize.css">
+		<link rel="stylesheet" type="text/css" href="skeleton.css">
+	</head>
+	<body onload = 'fillInfo()' style="background-image: url('sat.png');background-size:1366px 680px;">
+		<script src="jquery.min.js"></script>
+		<script src="bootstrap.min.js"></script>
+		<div class = 'container'><div class = 'jubotron' style = "background-color:blue">
+		<h1><center>SAT Online Exam</center></h1></div>
+		<div id='info'></div>
+		<h2><center>Your test will begin in <span id = 'count'></span> seconds.</center></h2>
+		<h2>Instructions</h2>
+		<ul>
+			<li>Make sure you have a good internet connection.</li>
+			<li>Never click the 'Back' button on the browser. This will take you out of the test and prevent the system from tracking your selected answers.</li>
+			<li>You will have 10 minutes to complete your exam.</li>
+			<li>Answer all questions in the exam.</li>	 
+			<li>Click the 'End Test' button to submit your exam and end the test within the given time.</li>
+		</ul>
+	</div></body>
+</html>

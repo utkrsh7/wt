@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> SAT Test Entry</title>
+		<script>
+			function func()
+			{
+				var id = document.getElementById('ID').value;
+				var pwd = document.getElementById('password').value;
+				console.log(id);
+				console.log(pwd);
+				if(id == 'SAT001' && pwd == '11091996')
+				{
+					window.location.href = "test_wait.html";
+				}
+				else
+				{
+					document.getElementById('error').innerHTML = '<font color = "red">Your id is not valid or seemed to be not registered with us.</font>';
+				}
+			}
+		</script>
+		<link rel="stylesheet" type="text/css" href="normalize.css">
+		<link rel="stylesheet" type="text/css" href="skeleton.css">
+	</head>
+	<body style="background-image: url('sat.png');background-size:1366px 680px;">
+		<script src="jquery.min.js"></script>
+		<script src="bootstrap.min.js"></script>
+		<div class = 'container'><div class = 'jubotron' style = "background-color:blue">
+		<h1><center><font color='white'>SAT Online Exam</font></center></h1></div>
+		<br><br>
+		<h4>Please enter the following details: (The password is your date of birth)</h4><br><br>
+		<div class="form-group">
+		<form onsubmit = 'func()'>
+			<center><label><input type = 'text' id = 'ID' class="form-control" placeholder="Enter your ID"></label></center><br>
+			<center><label><input type = 'password' id = 'password' class="form-control" placeholder="Enter your Password"></label></center><br>
+			<center><label><button class="btn btn-primary" type="button" onclick='func()'>Submit</button></label></center>
+		</form>
+	<center><button onclick="location.href='index.html'" type="button">Click Here to go to the home page.</button></center>
+	<div id = 'error'>
+	</div>
+	</body>
+</html>
